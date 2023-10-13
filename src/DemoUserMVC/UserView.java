@@ -22,7 +22,7 @@ public class UserView {
         System.out.println(message);
     }
 
-    public void displayMenu() {
+    public String displayMenu() {
         System.out.println("\nMenu:");
         System.out.println("1. Create an user");
         System.out.println("2. consult an user");
@@ -30,6 +30,7 @@ public class UserView {
         System.out.println("4. Delete an user");
         System.out.println("5. Exit");
         System.out.print("Choose an option: ");
+        return new Scanner(System.in).nextLine();
     }
 
 }
