@@ -15,7 +15,7 @@ public class UserController {
 
         while (KeepRunning) {
             view.displayMenu();
-            String option = view.getInput("Choose an option: ");
+            String option = view.displayMenu();
 
             switch (option) {
                 case "1":

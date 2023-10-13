@@ -26,14 +26,19 @@ public class UserView {
         System.out.println(message);
     }
 
-    public void displayMenu() {
-        System.out.println("\nMenu:");
-        System.out.println("1. Create an user");
-        System.out.println("2. Consult an user");
-        System.out.println("3. Modify an user");
-        System.out.println("4. Delete an user");
-        System.out.println("5. Exit");
-        System.out.print("Choose an option: ");
+    public String displayMenu() {
+
+        String message = "";
+        message += "\n welcome to the user management system \n";
+        message += "1. Create user \n";
+        message += "2. Consult user \n";
+        message += "3. Modify user \n";
+        message += "4. Delete user \n";
+        message += "5. Exit \n";
+        message += "Choose an option: \n";
+
+        return JOptionPane.showInputDialog(null, message);
+
     }
 
 }
